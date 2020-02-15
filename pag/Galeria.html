@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+	<title>Mundo SO</title>
+  <script src="../js/jquery.js"></script>
+  <link rel="shortcut icon" href="../img/Galeria/favicon.png" type="image/x-jpg"/>
+	<link href="../css/Galeria.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <script type="text/javascript">
+  $(function() {
+    $('.imagem-pequena img').hover(function() {
+      var imgSrc = $(this).attr('src');
+      $('.imagem-grande img').attr('src', imgSrc);
+    });
+  });
+  </script>
+
+ <!--====================== Aqui acabo a função js do slidershow===========-->     
+
+
+    <a name="ancora"></a>
+
+      <!--==================== Aqui declaro o menu ====================-->
+
+  	<div id="menu1">
+    <div id="menu2">
+        <head><h1>Apostila Virtual - </h1></head><!--======Texto do menu======-->
+
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="Galeria.html">GALERIA</a></li>
+        <li><a href="Cadastro.html">CADASTRO</a></li>
+        <li><a href="Sobre Nós.html">SOBRE NÓS</a></li>
+        <li><a href="#">CONTATO</a>
+          <ul>
+              <li><a href="Opiniao.html">&nbsp OPINIÃO</a></li>   
+              <li><a href="#">&nbsp  WILSON </a></li>
+              <li><a href="#">&nbsp LUCAS</a></li>
+          </ul>
+    </ul>
+        
+      </div>
+    </div>
+
+    <!--======================= Aqui termina o menu ==========================-->
+
+
+    </br>
+    <!--======================= Aqui começa o conteudo =======================-->
+
+      <div class="conteudo">
+        
+          <br>
+          <center><h2>&#171;Galeria&#187;</h2></center>
+          <br>
+      </div>
+
+<!--===========================Aqui começa o slideshow image =================-->
+  <div id="Galeria-principal">
+    <div class="imagem-grande">
+      <img src="../img/Galeria/1.jpg" alt="">
+    </div>
+
+    <div class="imagem-pequena">
+      <div class="img-holder">
+        <img src="../img/Galeria/1.jpg" alt="">
+      </div>
+
+      <div class="img-holder">
+        <img src="../img/Galeria/2.jpg" alt="">
+      </div>
+
+      <div class="img-holder">
+        <img src="../img/Galeria/3.jpg" alt="">
+      </div>
+
+            <div class="img-holder">
+        <img src="../img/Galeria/4.jpg" alt="">
+      </div>
+
+      <div class="img-holder">
+        <img src="../img/Galeria/5.jpg" alt="">
+      </div>
+
+      <div class="img-holder">
+        <img src="../img/Galeria/6.jpg" alt="">
+      </div>
+
+
+    </div>
+
+  </div>
+
+<!--===========================Aqui termina o slideshow image =================-->
+
+    <!--======================= Aqui termina o conteudo =======================-->
+    <br>
+
+    <!--============ Aqui começa a ancora =========-->
+      
+      <center><a href="#ancora" class="Ancora"><img src="../img/20.png"></a></center>
+      <br>
+
+      <!--============= Aqui termina a ancora ============-->
+
+
+      <!--================ Aqui declaro o rodapé ============-->
+
+    <div class="rodape">
+       <p>Autoria do site : Wilson Castro(Corcunda de Notre Dame) e Lucas Ferreira .
+       <p>Todos os direitos reservado 02/12/2017</p>
+    </div>
+
+      <!--================= Aqui termina o rodapé ============-->
+
+
+  </body>
+</html>

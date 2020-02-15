@@ -1,0 +1,172 @@
+
+*{
+	padding:0;
+	margin: 0;
+
+}
+
+body{
+	
+	background-color: #3a3838;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	
+}
+
+
+
+/*========Aqui começa o menu*=======*/
+
+
+h1{
+	font-family:'Fonte h1';
+}
+
+#menu1{
+	text-align: center;
+	width: 100%;
+	height: 100px;
+}
+#menu2{
+	background: black;
+	height: 100px;
+	width: 100%;
+	opacity: 0.6;
+	/*filter: alpha (opacity = 60);*/
+	line-height: 100px;
+
+}
+#menu2 h1{
+	float: left;
+	font-weight: 400;
+	color: white;
+	cursor: pointer;
+	margin-left: 10px;
+
+}
+
+#menu2 ul{
+	float: right;
+	position: relative;
+	margin-right: 100px;
+	line-height: 55px;
+
+}
+
+#menu2 ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+#menu2 ul li a{
+	padding: 22px;
+	text-decoration: none;
+	color: white;
+	display: block;
+
+}
+
+#menu2 ul li:hover{
+	background: #1E90FF;
+	transition: all 0.40s;
+}
+
+#menu2 ul li ul li a:hover{
+	background: #1E90FF;
+	transition: all 0.40s;
+}
+
+#menu2 ul li:hover ul {
+	display: block;
+}
+
+#menu2 ul ul {
+	display: none;
+	width: 120px;
+	position: absolute;
+}
+
+#menu2 ul li ul{
+	background:black;
+}
+
+#menu2 ul li ul:hover{
+	background: black;
+	transition: all 0.40s;
+
+}
+
+
+/*=========Aqui termina o menu============*/
+
+
+/*=======Aqui começa o conteudo =========*/
+
+.conteudo{
+	font-family:  Arial , Helvetica , sans-serif;
+	color: #1E90FF;
+	text-align: center;
+
+	border-radius: 20px;
+	background-color: black;
+	opacity: .7;
+	font-size: 20px;
+	margin: 0 auto;
+	margin-top:70px;
+	width:900px;
+	height:11300px;
+
+}
+
+#u{
+	color:white;
+
+}
+.conteudo p{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.conteudo li{
+	text-align: left;
+	padding-left: 200px;
+	padding-top:5px;
+}
+.imagens {
+    display: block;
+    width: 500px;
+    list-style: none;
+}
+
+p{
+	font-size: 24px;
+}
+
+.botao{
+    text-decoration: none;/*=== Retirei a linha de decoracao  ===*/
+    color:#fff;
+    position: relative;/*=== Posição movel ao cursor ===*/
+    float: center;
+    padding: 3px 10px;
+    background:#1E90FF;
+    font-family: "Arial", sans-serif;
+    border-radius: 2px;/*=== espeçura da borda ===*/
+    margin: 10px;
+}
+/*============Aqui acaba o conteudo=========*/
+
+
+/*=======Aqui começa o Rodapé=============*/
+
+.rodape {
+	background: black;
+    padding: 20px;
+	opacity: .8;}
+
+.rodape p { 
+	text-align: center;
+	color: white;
+	font-family: Arial;
+}
+
+/*==========Aqui acaba o rodape===========*/

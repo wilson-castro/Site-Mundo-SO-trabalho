@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+	<title>Apostila Virtual</title>
+    <script src="../js/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery/jquery.mask.min.js"></script>
+    <script src="../js/mask.js"></script>
+    <script src="../js/select.js"></script>
+    <script src="../js/validar.js"></script>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-jpg"/>
+	<link href="../css/Cadastro.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+
+    <a name="ancora"></a>
+
+       <!--====================Aqui declaro o menu====================-->
+
+
+    <div id="menu1">
+    <div id="menu2">
+        <head><h1>Apostila Virtual - </h1></head>
+
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="Galeria.html">GALERIA</a></li>
+        <li><a href="Cadastro.html">CADASTRO</a></li>
+        <li><a href="Sobre Nós.html">SOBRE NÓS</a></li>
+        <li><a href="#">CONTATO</a>
+          <ul>
+              <li><a href="Opiniao.html">&nbsp OPINIÃO</a></li>   
+              <li><a href="#">&nbsp  WILSON </a></li>
+              <li><a href="#">&nbsp &nbsp  LUCAS&nbsp  </a></li>
+          </ul>
+    </ul>
+        
+      </div>
+    </div></br>
+
+   <!--=======================Aqui termina o menu==========================-->
+
+
+    <!--================== Aqui começa o formuladrio ======================-->
+
+
+    <form id="form" onclick="validar()" method="post" action="../php/php.php">
+
+      <div class="Cadastro"><br>
+        
+        <h1> - Folha de Cadastro - </h1>
+
+      <br><br><br><br>
+      
+      <div id="textos">
+
+       <label>Nome : </label>
+         <input required="" type="text"  id="name" name="name"><br><div id="v_n"></div>
+
+
+        <label style="margin-left: -40px;">Sobrenome :</label>
+         <input required="" type="text" id="sname" name="sname"><br><div id="v_sn"></div><br><br>
+
+        <label>Data de Nascimento:</label>
+          <input required="" type="text"  id="date" name="date" placeholder="__/__/____"><br><br><br>
+
+        <label ><h2 style="margin-left: 75px;">Sexo:</label></h2><br><br>
+
+           <input required="" type="radio" name="sexo" value="Masculino.">Masculino<br>
+
+            <input required="" type="radio" name="sexo" value="Feminino.">Feminino<br><br><br>
+
+
+        <label style="margin-left: -29px;">Telefone : </label>
+        <input required="" type="text"  id="phone" name="phone" placeholder="(__) _____-____"><BR>
+
+        <label>CPF : </label>
+          <input required="" type="text" id="cpf" name="cpf" placeholder="___.___.___-__" ><br><div id="v_cpf"></div>
+        
+        <label style="margin-left: 8px;">RG : </label>
+          <input required="" type="text" id="rg" name="rg" placeholder="__.___.___-_"><br><br>
+        
+        <br><br><label style="padding-left: 70px;">Endereço:</label>
+          <input required="" type="text" id="end" name="end"><br><div id="v_end"></div><br><br><br>
+        
+        <label>Estado:</label>
+          <select required="" id="estado"  name="estado" onchange="select()"><br><br>
+
+              <option value="0">Escolha um Estado</option>
+              <option value="ac">Acre</option> 
+              <option value="al">Alagoas</option> 
+              <option value="am">Amazonas</option> 
+              <option value="ap">Amapá</option> 
+              <option value="ba">Bahia</option> 
+              <option value="ce">Ceará</option> 
+              <option value="df">Distrito Federal</option> 
+              <option value="es">Espírito Santo</option> 
+              <option value="go">Goiás</option> 
+              <option value="ma">Maranhão</option> 
+              <option value="mt">Mato Grosso</option> 
+              <option value="ms">Mato Grosso do Sul</option> 
+              <option value="mg">Minas Gerais</option> 
+              <option value="pa">Pará</option> 
+              <option value="pb">Paraíba</option> 
+              <option value="pr">Paraná</option> 
+              <option value="pe">Pernambuco</option> 
+              <option value="pi">Piauí</option> 
+              <option value="rj">Rio de Janeiro</option> 
+              <option value="rn">Rio Grande do Norte</option> 
+              <option value="ro">Rondônia</option> 
+              <option value="rs">Rio Grande do Sul</option> 
+              <option value="rr">Roraima</option> 
+              <option value="sc">Santa Catarina</option> 
+              <option value="se">Sergipe</option> 
+              <option value="sp">São Paulo</option> 
+              <option value="to">Tocantins</option> 
+          </select><br><div id="v_est"></div><br><br>
+<br>
+
+
+        <label>Cidade:</label>
+          <select id="cidade" name = "cidade" required="">
+                <option value="0">Selecione um estado.</option>
+         </select><br><div id="v_cid"></div><br><br><br>
+
+
+        
+        <label>Email:</label>
+          <input required="" type="email" name = "email" id="email"><br><div id="v_email"></div><br><br>
+       
+        <label><h2>Áreas de Interesse : </h2></label><br>
+          <input type="checkbox" name="area[]" value="Shell Script.">Shell Script.<br>
+          <input type="checkbox" name="area[]" value="Programação em C.">Programação em C.<br>
+          <input type="checkbox" name="area[]" value="Back-end com PHP.">Back-end com PHP.<br>
+          <input type="checkbox" name="area[]" value="Criação de sites.">Criação de sites.<br>
+          <input type="checkbox" name="area[]" value="Robótica.">Robótica.<br><br><br>
+       
+        <label style="margin-left: 7px;"> Login:</label>
+          <input required="" type="text" name="login"><br>
+        
+        <label>Senha:</label>
+         <input required="" type="password" id="senha" name="senha"><br><br><br>  
+       
+        <label>Confirmação de senha:</label>
+         <input required="" type="password" id="confirms"><div id="v_s"></div>
+         </div>
+
+         <br><br><br><br>
+         <center><input required="" type="submit" value="Enviar" class="botao"></center>
+
+       
+
+    </form>
+
+  </div>
+      <!--=================== Fim do Formulario ===================-->
+
+   
+      <br>
+
+      <!--=========== Aqui começa a ancora ============-->
+      
+      <center><a href="#ancora" class="Ancora"><img src="../img/20.png"></a></center>
+      <br>
+
+      <!--============= Aqui termina a ancora ========-->
+
+      <!--============= Aqui declaro o rodapé ========-->
+
+    <div class="rodape">
+       <p>Autoria do site : Wilson Castro  e Lucas Ferreira .
+       <p>Todos os direitos reservado 24/06/2018</p>
+    </div>
+
+      <!--============= Aqui termina o rodapé =========-->
+
+
+
+  </body>
+</html>

@@ -1,0 +1,241 @@
+
+
+*{
+	padding:0;
+	margin: 0;
+
+}
+
+body{
+		
+	background-image: url("../img/21.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;/*===============Para se estender a pagina toda==================*/
+	
+	}
+
+/
+//*============================Aqui começa o menu*=================================*/
+
+
+h1{
+    font-family:'Fonte h1';/*======== Chamei para fzr o texto que está no menu =============*/
+}
+
+
+#menu1{
+    text-align: center;
+    width: 100%;/*================ Largura do menu ===========*/
+    height: 100px;/*============== Altura do menu  ============*/
+}
+
+#menu2{
+    background: black; /*===== Cor de Fundo =========*/
+    height: 100px;
+    width: 100%;
+    opacity: 0.6;
+    filter: alpha (opacity = 60);/*===== para n precisar colocar nas 3 divs =====*/
+    line-height: 100px;/*===== Altura venticalmente====*/
+
+}
+
+#menu2 h1{/*========== Se referir ao texto do menu ========*/
+    float: left;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;/*=== cursor do mouse ====*/
+    margin-left: 10px;/*==== Margin da ponta esquerda ===*/
+
+}
+
+#menu2 ul{/*======== Se referir ao conteudo do menu ul ======*/
+    float: right;
+    position: relative;
+    margin-right: 100px;
+    line-height: 55px;
+
+}
+
+#menu2 ul li{
+    list-style-type: none;
+    display: inline-block;/*=== horizontalmente  ====*/
+}
+
+#menu2 ul li a{
+    padding: 22px;/*=== distancia entre cada um ===*/
+    text-decoration: none;
+    color: white;
+    display:block;/*=== layout em bloco===*/
+
+}
+
+#menu2 ul li:hover{
+    background: #1E90FF;
+    transition: all 0.40s;
+}
+
+#menu2 ul li ul li a:hover{
+    background: #1E90FF;
+    transition: all 0.30s;/*==== Animção do hover, tempo de dele transição======*/
+}
+
+#menu2 ul li:hover ul {
+    display: block;/*===== faz o bloco do sub menu ficar bloquedo com a animação do houver====*/
+}
+
+#menu2 ul ul {/*============ controlar animação do sub menu =====*/
+
+    display: none;/*==== Animção do sub permanente ===*/
+    width: 120px;
+    position: absolute;
+}
+
+#menu2 ul li ul{/*======== Fundo do sub menu ========*/
+    background:black;
+}
+
+#menu2 ul li ul:hover{
+    background: black;/* ======= Fundo do sub quando hover ====*/
+    transition: all 0.40s;/*=======Animação do hover=========*/
+
+}
+
+/*============================== Aqui termina o menu=========================*/
+
+
+/*=========Aqui começa a estilização da galeria======*/
+
+#caixa {/*==== Se refere a imagen apenas ==*/
+    width: 880px;/*== Tamanho da imagen ==*/
+    height: auto;/*== Largura proporcional ==*/
+    margin: 15px auto;/*== Margin da borda esquerda ==*/
+    display: block;
+    margin-bottom: 50px;/*== Distancia de cada ==*/
+}
+
+#caixa:after {/*== se refere a imagens depois da animacao ==*/
+    display: block;
+    content: '.';
+    line-height: 0;
+    visibility: hidden;
+}
+
+.imagens {
+    display: block;
+    width: 880px;
+    list-style: none;/*== Retirar os efeitos tipo lista ==*/
+}
+
+.imagens li {/*== Se refere a lista toda ==*/
+    position: relative;
+    display: block;
+    float: left;
+    width: 400px;
+    height: 300px;
+    margin:20px;/*==  a margin da lista ==*/
+    cursor: pointer;/*== Ajustando o layout quando passsar o mouse na  lista */
+}
+
+
+.imagens li img{/*=== Se refere apenas a imagens dentro da lista ===*/
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 800;
+    position: absolute;/*== irá esconder o texto abaixo da imagen : a imagen irá cobrir o texto; ==*/
+    transition:.5s;/*== Tempo que animação 0cx0vai ocorrer*/
+}
+
+.imagens li:hover image-rendering/*== Animação, acontece que quando passar o mouse o a imagen vai receber o atributo -80px,cancelando os atrinutos anteriores
+ oque faz ela flutuar*/
+ {
+    margin-top:-80px;
+}
+
+.imagens li:hover img {
+    margin-top:-80px;
+}
+
+
+.conteudo{/*== Irá criar um fundo para o texto abaixo da imagens ==*/
+    opacity: .7;
+    display: block;
+    width: 100%;
+    height: 90px;
+    background-color:black;/*== Fundo do texto ==*/
+    overflow: hidden;/*== texto escondido ==*/
+    color: #fff;
+    margin-top: 220px;
+}
+
+.conteudo p {/*== Irá criar um fundo para o texto abaixo da imagens ==*/
+
+    display: block;
+    color: #fff;
+    position: relative;
+    float: left;
+    width: 250px;/*== Largura do fundo ==*/
+    margin:10px;/*== Margin do texto ==*/
+    margin-bottom: 0;/*== Margin vertical ==*/
+    font-family: "Arial", sans-serif;
+    text-indent: 10px;
+
+}
+.conteudo1 {/*== Irá criar um fundo para o texto abaixo da imagens ==*/
+    opacity: .7;
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color:black;/*== Fundo do texto ==*/
+    overflow: hidden;/*== texto escondido ==*/
+    color: #fff;
+}
+
+.conteudo1 h2{/*== Irá criar um fundo para o texto abaixo da imagens ==*/
+
+    display: block;
+    color: #fff;    position: relative;
+    float: center;
+    width: 250px;/*== Largura do fundo ==*/
+    margin:10px;/*== Margin do texto ==*/
+    font-family: "Arial", sans-serif;
+    text-indent: 10px;
+
+}
+
+
+.botao{
+    display: block;
+    text-decoration: none;/*=== Retirei a linha de decoracao  ===*/
+    color:#fff;
+    position: relative;/*=== Posição movel ao cursor ===*/
+    float: right;
+    padding: 3px 10px;
+    background:#1E90FF;
+    font-family: "Arial", sans-serif;
+    border-radius: 2px;/*=== espeçura da borda ===*/
+    margin: 10px;
+}
+.nome {
+    font-size:18px;
+}
+.descricao {
+    font-size: 12px;
+}
+
+/*========Aqui termina a estilização da galeria=========*/
+
+/*=====Aqui começa o Rodapé=====*/
+
+.rodape {
+	background: black;
+    padding: 20px;
+	opacity: .8;}/*=== Transparencia do rodape ===*/
+
+.rodape p { 
+	text-align: center;
+	color: white;/*=== coloração do texot===*/
+	font-family: Arial;
+}
+
+nav{ margin-top: -130px; }

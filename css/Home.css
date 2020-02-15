@@ -1,0 +1,146 @@
+
+*{
+	padding:0;
+	margin: 0;
+
+}			
+body{
+		
+	background-image: url("../img/21.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;/*===============Para se estender a pagina toda==================*/
+	
+	}
+
+/*============================Aqui começa o menu*=================================*/
+
+
+h1{
+	font-family:'Fonte h1';/*======== Chamei para fzr o texto que está no menu =============*/
+}
+
+
+#menu1{
+	text-align: center;
+	width: 100%;/*================ Largura do menu ===========*/
+	height: 100px;/*==	============ Altura do menu  ============*/
+}
+
+#menu2{
+	background: black; /*===== Cor de Fundo =========*/
+	height: 100px;
+	width: 100%;
+	opacity: 0.6;
+	filter: alpha (opacity = 60);/*===== para n precisar colocar nas 3 divs =====*/
+	line-height: 100px;/*===== Altura venticalmente====*/
+
+}
+
+#menu2 h1{/*========== Se referir ao texto do menu ========*/
+	float: left;
+	font-weight: 400;
+	color: white;
+	cursor: pointer;/*=== Inutil ====*/
+	margin-left: 10px;/*==== Margin da ponta esquerda ===*/
+
+}
+
+#menu2 ul{/*======== Se referir ao conteudo do menu ul ======*/
+	float: right;
+	position: relative;
+	margin-right: 100px;
+	line-height: 55px;
+
+}
+
+#menu2 ul li{
+	list-style-type: none;
+	display: inline-block;/*== = horizontalmente  ====*/
+}
+
+#menu2 ul li a{
+	padding: 22px;/*=== distancia entre cada um ===*/
+	text-decoration: none;
+	color: white;
+	display:block;/*=== layout em bloco===*/
+	transition: all 0.5s;
+}
+
+#menu2 ul li:hover{
+	background: #1E90FF;
+	transition: all 0.5s;
+}
+
+#menu2 ul li ul li a:hover{
+	background: #1E90FF;
+	transition: all 0.5s;/*==== Animção do hover, tempo de dele transição======*/
+}
+
+#menu2 ul li:hover ul {
+	display: block;/*===== faz o bloco do sub menu ficar bloquedo com a animação do houver====*/
+}
+
+#menu2 ul ul {/*============ controlar animação do sub menu =====*/
+
+	display: none;/*==== Animção do sub permanente ===*/
+	width: 120px;
+	position: absolute;
+}
+
+#menu2 ul li ul{/*======== Fundo do sub menu ========*/
+	background:black;
+}
+
+#menu2 ul li ul:hover{
+	background: black;/* ======= Fundo do sub quando hover ====*/
+	transition: all 0.20s;/*=======Animação do hover=========*/
+
+}
+
+/*============================== Aqui termina o menu=========================*/
+
+
+/*========================== Apresentação e conteudo =======================*/
+
+
+
+.conteudo{
+	font-family:  Arial , Helvetica , sans-serif;/*==== sans-serif estilizacao que permite tirar as pontas das letras */
+	color: #1E90FF;
+	text-align:left;/*====== Alinhamento do texto dentro da caixa =========*/
+	border-radius: 20px;/*====== Define arredondamento das bordas =========*/
+	background-color: black;
+	opacity: .6;
+	font-size: 25px;
+	margin: 0 auto;
+	margin-top:70px;
+	width:560px;
+	height:400px;
+	text-decoration: none;
+
+}
+
+.conteudo a{text-decoration: none;color: #1E90FF;padding: 10px;}.conteudo li{padding: 5px;}
+
+a:hover{
+	text-decoration: #1E90FF;
+}
+
+/*========================= Aqui acaba o espaço do conteudo ===================*/
+
+
+/*=================== Aqui começa o Rodapé ============*/
+
+.rodape {
+	position: bottom;
+	background: black;
+    padding: 20px;
+	opacity: .8;}
+
+.rodape p { 
+	text-align: center;
+	color: white;
+	font-family: Arial;
+}
+
+/*===================== Aqui acaba o rodapé =============*/
